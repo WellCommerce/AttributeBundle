@@ -10,16 +10,16 @@
  * please view the LICENSE file that was distributed with this source code.
  */
 
-namespace WellCommerce\Bundle\AttributeBundle\Manager\Admin;
+namespace WellCommerce\Bundle\AttributeBundle\Manager;
 
-use WellCommerce\Bundle\CoreBundle\Manager\Admin\AbstractAdminManager;
+use WellCommerce\Bundle\CoreBundle\Manager\AbstractManager;
 
 /**
  * Class AttributeGroupManager
  *
  * @author  Adam Piotrowski <adam@wellcommerce.org>
  */
-class AttributeGroupManager extends AbstractAdminManager
+class AttributeGroupManager extends AbstractManager
 {
     /**
      * @var \WellCommerce\Bundle\AttributeBundle\Repository\AttributeGroupRepositoryInterface

@@ -4,13 +4,13 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <imports>
-        <import resource="admin/attribute.xml"/>
+        <import resource="admin/attribute_group.xml"/>
     </imports>
 
     <services>
-        <service id="attribute.manager" class="WellCommerce\Bundle\AttributeBundle\Manager\AttributeManager" parent="core.manager">
-            <argument type="service" id="attribute.repository"/>
-            <argument type="service" id="attribute.factory"/>
+        <service id="attribute_group.manager" class="WellCommerce\Bundle\AttributeBundle\Manager\AttributeGroupManager" parent="core.manager">
+            <argument type="service" id="attribute_group.repository"/>
+            <argument type="service" id="attribute_group.factory"/>
         </service>
     </services>
 </container>

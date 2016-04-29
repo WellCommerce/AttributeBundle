@@ -10,18 +10,18 @@
  * please view the LICENSE file that was distributed with this source code.
  */
 
-namespace WellCommerce\Bundle\AttributeBundle\Manager\Admin;
+namespace WellCommerce\Bundle\AttributeBundle\Manager;
 
 use WellCommerce\Bundle\AttributeBundle\Entity\AttributeGroupInterface;
 use WellCommerce\Bundle\AttributeBundle\Entity\AttributeInterface;
-use WellCommerce\Bundle\CoreBundle\Manager\Admin\AbstractAdminManager;
+use WellCommerce\Bundle\CoreBundle\Manager\AbstractManager;
 
 /**
  * Class AttributeManager
  *
  * @author  Adam Piotrowski <adam@wellcommerce.org>
  */
-class AttributeManager extends AbstractAdminManager
+class AttributeManager extends AbstractManager
 {
     public function createAttribute(string $attributeName, int $attributeGroupId) : AttributeInterface
     {
